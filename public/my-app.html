@@ -1,0 +1,38 @@
+<link rel="import" href="bower_components/polymerfire/firebase-app.html">
+<link rel="import" href="bower_components/google-map/google-map.html">
+<link rel="import" href="bower_components/google-map/google-map-poly.html">
+<link rel="import" href="bower_components/google-map/google-map-point.html">
+<link rel="import" href="my-map.html">
+<link rel="import" href="my-requests.html">
+<!-- <link rel="import" href="bower_components/google-map/google-map-poly.html"> -->
+<!-- <link rel="import" href="my-login.html"> -->
+<!-- <link rel="import" href="test.html"> -->
+<!-- <link rel="import" href="my-notes.html"> -->
+<!-- <link rel="import" href="my-testing.html"> -->
+
+<dom-module id="my-app">
+  <!-- <template>
+
+    <firebase-app
+      auth-domain="chat-5a197.firebaseapp.com"
+      database-url="https://chat-5a197.firebaseio.com/"
+      api-key="AIzaSyB-xH8mQZpVlelUGYE3cZ7k1RcQwVeo9Xs"
+      storage-bucket="polymerfire-test.appspot.com"
+      messaging-sender-id="544817973908">
+    </firebase-app>
+    <my-login></my-login>
+    <my-notes></my-notes>
+
+  </template> -->
+  <template>
+  <my-map></my-map>
+  </template>
+
+  <script>
+
+  Polymer({
+    is: 'my-app'
+  });
+
+  </script>
+</dom-module>
