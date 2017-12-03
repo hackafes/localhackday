@@ -1,0 +1,26 @@
+<link rel="import" href="/bower_components/iron-ajax/iron-ajax.html">
+
+
+<dom-module id="my-requests">
+
+  <template>
+    <h1>hola esto funciona x2</h1>
+
+    <iron-ajax
+        auto
+        url="https://pubsbapi.smartbike.com/api/v1/stations.json?access_token=NzdkYWQzM2NjMmQ4M2EwMWUwNmMxMmMzOWRmZWFmYjE1ODMwYjM3NzBiODM0ZDgxNmVkYjA5NzM1NjgxZTk4Mw"
+        handle-as="json"
+        on-response="data"></iron-ajax>
+muestro: {{data}}
+  </template>
+
+
+  <script>
+
+  Polymer({
+    is: 'my-requests',
+  
+  });
+
+  </script>
+</dom-module>
