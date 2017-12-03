@@ -1,0 +1,30 @@
+<link rel="import" href="bower_components/good-map/good-map.html">
+<link rel="import" href="bower_components/google-map/google-map.html">
+<link rel="import" href="bower_components/google-map/google-map-poly.html">
+<link rel="import" href="bower_components/google-map/google-map-point.html">
+<dom-module id="my-map">
+
+  <template>
+    <script src="../webcomponentsjs/webcomponents-lite.min.js"></script>
+    <style>
+      google-map {
+        height: 450px;
+        /*width: 1200px;*/
+      }
+    </style>
+
+    <google-map latitude="19.4284700" longitude="-99.1276600">
+        <google-map-marker latitude=" 19.384378" longitude="-99.176097" draggable="true"></google-map-marker>
+    </google-map>
+    <h1>hola esto funciona</h1>
+
+  </template>
+
+  <script>
+
+  Polymer({
+    is: 'my-map'
+  });
+
+  </script>
+</dom-module>
